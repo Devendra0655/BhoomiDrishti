@@ -15,6 +15,11 @@ app.add_middleware(
 )
 
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 @app.get("/cahsi/{district}/{crop}")
 def cahsi(district: str, crop: str, as_of_date: str | None = None):
     result = cahsi_core.get_cahsi_prediction(district, crop, as_of_date)
