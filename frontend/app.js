@@ -3,7 +3,7 @@
 // Vanilla JS: screen routing, real backend fetch calls, i18n
 // ===================================================================
 
-const API_BASE = 'http://localhost:8000'; // same-origin by default; set e.g. 'https://your-api.example.com' if backend is hosted separately
+const API_BASE = 'https://bhoomidrishti-backend-qqd9.onrender.com';
 
 const DISTRICT_LABELS = {
   Amravati: { mr: 'अमरावती', en: 'Amravati' },
