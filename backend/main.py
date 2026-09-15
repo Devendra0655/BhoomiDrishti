@@ -6,10 +6,12 @@ from advisory_llm import generate_advisory
 
 app = FastAPI(title="BhoomiDrishti API")
 
-# Dev-friendly CORS. Restrict allow_origins to the real PWA domain before deployment.
+# Restricted to the deployed Vercel frontend. Add http://localhost:5500 (or
+# whichever port you serve frontend/ on locally) back to this list if you need
+# to test against this deployed backend from your local machine again.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://bhoomi-drishti-sandy.vercel.app"],
     allow_methods=["GET"],
     allow_headers=["*"],
 )
