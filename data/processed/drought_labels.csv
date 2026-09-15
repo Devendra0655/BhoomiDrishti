@@ -1,0 +1,45 @@
+DISTRICT_STD,year,drought_label,label_confidence,source_note
+Akola,2013,0,default_zero,not individually named in sources checked
+Amravati,2013,0,default_zero,not individually named in sources checked
+Bhandara,2013,0,default_zero,not individually named in sources checked
+Buldhana,2013,1,confirmed,"Step 6 ref doc - 2012-13 Maharashtra drought, worst-hit districts"
+Chandrapur,2013,0,default_zero,not individually named in sources checked
+Gadchiroli,2013,0,default_zero,not individually named in sources checked
+Gondia,2013,0,default_zero,not individually named in sources checked
+Nagpur,2013,0,default_zero,not individually named in sources checked
+Wardha,2013,0,default_zero,not individually named in sources checked
+Washim,2013,0,default_zero,not individually named in sources checked
+Yavatmal,2013,0,default_zero,not individually named in sources checked
+Akola,2015,1,confirmed,"Step 6 ref doc - 2015 drought, water scarcity districts"
+Amravati,2015,1,confirmed,"Step 6 ref doc - 2015 drought, worst-affected districts named"
+Bhandara,2015,1,confirmed,"Step 6 ref doc - 2015 drought, water scarcity districts"
+Buldhana,2015,1,confirmed,"Step 6 ref doc - 2015 drought, worst-affected districts named"
+Chandrapur,2015,1,confirmed,"Step 6 ref doc - 2015 drought, water scarcity districts"
+Gadchiroli,2015,0,default_zero,not individually named in sources checked
+Gondia,2015,1,confirmed,"Step 6 ref doc - 2015 drought, water scarcity districts"
+Nagpur,2015,1,confirmed,"Step 6 ref doc - 2015 drought, worst-affected districts named"
+Wardha,2015,1,confirmed,"Step 6 ref doc - 2015 drought, worst-affected districts named"
+Washim,2015,0,default_zero,not individually named in sources checked
+Yavatmal,2015,1,confirmed,"Step 6 ref doc - 2015 drought, worst-affected districts named"
+Akola,2018,0,default_zero,not individually named in sources checked
+Amravati,2018,0,default_zero,not individually named in sources checked
+Bhandara,2018,0,default_zero,not individually named in sources checked
+Buldhana,2018,0,default_zero,not individually named in sources checked
+Chandrapur,2018,0,default_zero,not individually named in sources checked
+Gadchiroli,2018,0,default_zero,not individually named in sources checked
+Gondia,2018,0,default_zero,not individually named in sources checked
+Nagpur,2018,0,default_zero,not individually named in sources checked
+Wardha,2018,0,default_zero,not individually named in sources checked
+Washim,2018,1,confirmed,"Step 6 ref doc - 2018-19 drought, drought-declared district"
+Yavatmal,2018,1,confirmed,"Step 6 ref doc - 2018-19 drought, tehsils named in state order"
+Akola,2019,0,default_zero,not individually named in sources checked
+Amravati,2019,0,default_zero,not individually named in sources checked
+Bhandara,2019,0,default_zero,not individually named in sources checked
+Buldhana,2019,0,default_zero,not individually named in sources checked
+Chandrapur,2019,0,default_zero,not individually named in sources checked
+Gadchiroli,2019,0,default_zero,not individually named in sources checked
+Gondia,2019,0,default_zero,not individually named in sources checked
+Nagpur,2019,0,default_zero,not individually named in sources checked
+Wardha,2019,0,default_zero,not individually named in sources checked
+Washim,2019,1,confirmed,"Step 6 ref doc - 2018-19 drought, drought-declared district"
+Yavatmal,2019,1,confirmed,"Step 6 ref doc - 2018-19 drought, tehsils named in state order"

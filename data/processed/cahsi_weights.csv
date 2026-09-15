@@ -1,0 +1,2 @@
+w1_ndvi,w2_gw,w3_spi,corr_ndvi_raw,corr_gw_raw,corr_spi_raw,p_ndvi,p_gw,p_spi,n_district_years,ndvi_window_note,gw_spi_window_note,gw_sign_note
+0.3114035087719298,0.22368421052631585,0.4649122807017544,-0.27282479771333784,0.1959727420194399,-0.4073158951776593,0.07316836997619874,0.20233840820333207,0.006066613541508425,44,Sept-Dec harvest-outcome window (lagging indicator),Jun-Dec Kharif accumulation window (leading indicators),"weak/noisy at this sample size, not a clean inversion (see Pre-Step 1 log)"

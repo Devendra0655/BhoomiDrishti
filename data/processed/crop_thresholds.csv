@@ -1,0 +1,6 @@
+crop,n_periods,districts_used,severe_cutoff_CAHSI,moderate_cutoff_CAHSI,literature_cross_check
+Cotton,1595,all 11,-0.6099670142898318,-0.2667418248888239,"not available - CAHSI is novel, no prior calibration exists to check against"
+Soybean,979,all 11,-0.6272100978684277,-0.2893775281361821,"not available - CAHSI is novel, no prior calibration exists to check against"
+Tur,1595,all 11,-0.6099670142898318,-0.2667418248888239,"not available - CAHSI is novel, no prior calibration exists to check against"
+Wheat,1155,all 11,-0.596298040537151,-0.2499986550591702,"not available - CAHSI is novel, no prior calibration exists to check against"
+Orange,214,"['Nagpur', 'Amravati']",-0.6415680327240287,-0.2856781053621324,"not available - CAHSI is novel, no prior calibration exists to check against"

@@ -1,0 +1,16 @@
+DISTRICT_STD,year,crop,declaration_date,first_severe_date,lead_time_weeks,status
+Akola,2015,Cotton,2016-03-25,2015-07-28,34.4,ahead of declaration
+Amravati,2015,Cotton,2016-03-25,2015-09-14,27.6,ahead of declaration
+Amravati,2015,Orange,2016-03-25,2015-09-14,27.6,ahead of declaration
+Bhandara,2015,Cotton,2016-03-25,2015-09-14,27.6,ahead of declaration
+Buldhana,2015,Cotton,2015-11-09,2015-07-28,14.9,ahead of declaration
+Chandrapur,2015,Cotton,2016-03-25,2015-09-14,27.6,ahead of declaration
+Gondia,2015,Cotton,2016-03-25,2015-09-14,27.6,ahead of declaration
+Nagpur,2015,Cotton,2016-03-25,2015-09-14,27.6,ahead of declaration
+Nagpur,2015,Orange,2016-03-25,2015-09-30,25.3,ahead of declaration
+Wardha,2015,Cotton,2016-03-25,2015-09-14,27.6,ahead of declaration
+Yavatmal,2015,Cotton,2016-03-25,2015-07-12,36.7,ahead of declaration
+Washim,2018,Cotton,2018-10-31,2018-10-16,2.1,ahead of declaration
+Yavatmal,2018,Cotton,2018-10-31,2018-10-16,2.1,ahead of declaration
+Washim,2019,Cotton,2019-02-22,2018-10-16,18.4,ahead of declaration
+Yavatmal,2019,Cotton,2019-02-22,2018-10-16,18.4,ahead of declaration
