@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.bhoomi_drishti_sandy.twa",
+        "sha256_cert_fingerprints": ["89:48:05:63:72:E5:53:B7:F6:3E:9B:B7:0B:55:B4:EB:33:B5:9D:54:B2:BE:99:2C:1E:BE:64:7B:20:35:55:23"]
+      }
+    }]
