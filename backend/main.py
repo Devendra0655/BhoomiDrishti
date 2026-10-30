@@ -32,7 +32,7 @@ def cahsi(district: str, crop: str, as_of_date: str | None = None):
 
 
 @app.get("/advisory/{district}/{crop}")
-def advisory(district: str, crop: str, as_of_date: str | None = None):
+def advisory(district: str, crop: str, as_of_date: str | None = None, lang: str = "mr"):
     result = cahsi_core.get_cahsi_prediction(district, crop, as_of_date)
     if "error" in result:
         raise HTTPException(status_code=404, detail=result["error"])
@@ -42,7 +42,8 @@ def advisory(district: str, crop: str, as_of_date: str | None = None):
     stage = cahsi_core.get_crop_stage(crop, as_of_date)
 
     reason_text, advisory_text = generate_advisory(
-        district, crop, result["severity"], result["cahsi_score"], stage, driver
+        district, crop, result["severity"], result["cahsi_score"], stage, driver,
+        lang="en" if lang == "en" else "mr",
     )
 
     return {

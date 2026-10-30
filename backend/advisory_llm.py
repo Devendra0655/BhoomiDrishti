@@ -14,8 +14,16 @@ SYSTEM_PROMPT = (
     "ADVISORY: <3-4 short Marathi lines, no markdown, no English words, each line under 20 words>"
 )
 
+# Same instructions in English, used only when the app is switched to English (?lang=en).
+SYSTEM_PROMPT_EN = (
+    "You are an agricultural advisor writing short, practical advisories for farmers "
+    "in Vidarbha, Maharashtra, in simple English. Respond in exactly this format, nothing else:\n"
+    "REASON: <one short English sentence naming the main driver, under 12 words>\n"
+    "ADVISORY: <3-4 short English lines, no markdown, each line under 20 words>"
+)
 
-def generate_advisory(district, crop, severity, cahsi_score, stage, driver):
+
+def generate_advisory(district, crop, severity, cahsi_score, stage, driver, lang="mr"):
     user_prompt = (
         f"District: {district}\nCrop: {crop}\nSeverity: {severity} (CAHSI={cahsi_score:.2f})\n"
         f"Crop stage: {stage}\nMain driver: {driver}\n\nRespond in the required format."
@@ -23,7 +31,7 @@ def generate_advisory(district, crop, severity, cahsi_score, stage, driver):
     response = _client.chat.completions.create(
         model="openai/gpt-oss-120b",
         messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "system", "content": SYSTEM_PROMPT_EN if lang == "en" else SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt},
         ],
         temperature=0.4,
