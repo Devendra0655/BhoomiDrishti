@@ -80,8 +80,11 @@ async function fetchCahsi(district, crop, asOfDate) {
   return apiGet(`/cahsi/${district}/${crop}${buildQuery(asOfDate)}`);
 }
 
-async function fetchAdvisory(district, crop, asOfDate) {
-  return apiGet(`/advisory/${district}/${crop}${buildQuery(asOfDate)}`);
+async function fetchAdvisory(district, crop, asOfDate, lang) {
+  // Marathi (default) uses exactly the same URL as before; English adds lang=en.
+  let query = buildQuery(asOfDate);
+  if (lang === 'en') query += (query ? '&' : '?') + 'lang=en';
+  return apiGet(`/advisory/${district}/${crop}${query}`);
 }
 
 async function fetchCropCalendar(crop, asOfDate) {
@@ -146,8 +149,12 @@ function initSelectors() {
 }
 
 // ---------- Screen 2: CAHSI status (real backend call) ----------
+let statusRequestId = 0;
+
 async function populateStatusScreen(district, crop, asOfDate) {
   const apiCrop = CROP_API_NAME[crop] || crop;
+  const requestId = ++statusRequestId;   // ignore late replies after a newer request (e.g. quick language switch)
+  const lang = currentLang;
 
   document.getElementById('status-district').textContent = DISTRICT_LABELS[district][currentLang];
   document.getElementById('status-crop').textContent = CROP_LABELS[crop][currentLang];
@@ -166,8 +173,9 @@ async function populateStatusScreen(district, crop, asOfDate) {
   try {
     const [cahsiData, advisoryData] = await Promise.all([
       fetchCahsi(district, apiCrop, asOfDate),
-      fetchAdvisory(district, apiCrop, asOfDate),
+      fetchAdvisory(district, apiCrop, asOfDate, lang),
     ]);
+    if (requestId !== statusRequestId) return;
 
     const bandColors = { Low: 'var(--low)', Moderate: 'var(--moderate)', Severe: 'var(--severe)' };
     const score = cahsiData.cahsi_score;
@@ -198,6 +206,7 @@ async function populateStatusScreen(district, crop, asOfDate) {
 
     localStorage.setItem(CACHE_KEY, JSON.stringify({ district, crop, cahsiData, advisoryData }));
   } catch (err) {
+    if (requestId !== statusRequestId) return;
     number.textContent = '—';
     advisoryText.textContent = NO_DATA_TEXT[currentLang];
     reasonText.textContent = '';
