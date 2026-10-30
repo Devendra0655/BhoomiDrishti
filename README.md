@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://bhoomi-drishti-sandy.vercel.app"><b>Open the live app</b></a> ·
-  <a href="https://www.doi.org/10.56726/IRJMETS103718">Published paper</a>
+  <a href="[https://www.doi.org/10.56726/IRJMETS103718](https://www.irjmets.com/paperdetail.php?paperId=74f086b264f23ee14f9fe72e36a47a81)">Published paper</a>
 </p>
 
 ---
